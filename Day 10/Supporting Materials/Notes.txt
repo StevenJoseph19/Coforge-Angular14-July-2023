@@ -1,2 +1,2 @@
-For modules 8 - 9, in case of any error when running 'npm install', run the following command:
+In case of any error when running 'npm install', run the following command:
 npm install --save --legacy-peer-deps
