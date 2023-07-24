@@ -1,0 +1,9 @@
+<mat-toolbar color="primary"
+  ><span>My Application</span>
+  <span class="space"></span>
+  <button class="btns" mat-button [matMenuTriggerFor]="menu">Menu</button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>Settings</button>
+    <button mat-menu-item>Help</button>
+  </mat-menu>
+</mat-toolbar>
