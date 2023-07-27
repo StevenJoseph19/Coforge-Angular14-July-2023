@@ -1,0 +1,2 @@
+$ npm install --legacy-peer-deps
+$ $env:NODE_OPTIONS = "--openssl-legacy-provider"
