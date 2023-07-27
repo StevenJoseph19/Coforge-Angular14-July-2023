@@ -1,0 +1,25 @@
+<ng-container
+    *ngIf="{
+        books: books$ | async,
+        isLoading: isLoading$ | async
+    } as data"
+>
+    <div class="header">
+        <input #inputElement>
+        <button (click)="onCreateBook(inputElement.value)">Create book</button>
+    </div>
+    <div class="container">
+        <table>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Action</th>
+            <tbody>
+            <tr *ngFor="let book of data.books">
+                <td>{{book.id}}</td>
+                <td>{{book.name}}</td>
+                <td><button (click)="onDeleteBook(book)">Delete</button></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</ng-container>
