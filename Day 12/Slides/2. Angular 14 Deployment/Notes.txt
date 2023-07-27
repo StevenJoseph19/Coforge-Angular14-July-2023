@@ -1,8 +1,0 @@
-npm install -g angular-cli-ghpages
-
-ng build  --base-href https://StevenJoseph19.github.io/my-deployment-app/  
-ngh --dir dist/my-deployment-app
-
-
-https://StevenJoseph19.github.io/my-deployment-app
-
